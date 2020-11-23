@@ -1,4 +1,4 @@
-import { BrowserRouter as Router , Route ,Switch } from 'react-router-dom';
+import { BrowserRouter as Router ,Switch } from 'react-router-dom';
 import Header from './Header';
 import NavBar from './NavBar';
 import Profile from './Profile';
