@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import '../styles/common.css';
 import Avatar from './Avatar';
+import NamePlate from './NamePlate';
 
 class Header extends Component {
     state = {  }
     render() { 
         return ( 
             <div className="header">
-                <Avatar/>
-                <p>Abhisekh Nag</p>
-                <p>Senior Software Engineer | Artist | Perfectionist</p>
+                <Avatar         data={this.props.data} />
+                <NamePlate      data={this.props.data} />
             </div> 
         );
     }

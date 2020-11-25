@@ -1,11 +1,15 @@
-import React, { Component , Image } from 'react';
+import React, { Component } from 'react';
 import '../styles/common.css';
 
 class Avatar extends Component {
     state = {  }
     render() { 
         return (
-            <h1>Avatar</h1>
+            <img 
+                src={ require( '../resources/' + this.props.data.avatar ).default } 
+                alt={ this.props.data.alt }
+                className="avatar" 
+            />
          );
     }
 }

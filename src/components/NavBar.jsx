@@ -1,18 +1,55 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-class Header extends Component {
-    state = {  }
+import '../styles/common.css';
+import _ from 'lodash';
+class NavBar extends Component {
+    state = {
+        selected: 0
+    }
+
+    componentDidMount(){
+        console.log(window.location.pathname)
+        _.forEach(
+            this.props.data,
+            (nav)=>{
+                if(nav.url === window.location.pathname){
+                    this.setState({
+                        selected: nav.selected
+                    })
+                }
+                return
+            }
+        )
+    }
+
+
+    select = (index)=>{
+        this.setState({
+            selected:index
+        });
+    }
+
     render() { 
         return ( 
-            <nav role="navigation">
-                <Link to="/profile">Profile</Link>
-                <Link to="/skills">Skills</Link>
-                <Link to="/work">Work Experience</Link>
-                <Link to="/hobbies">Hobbies</Link>
-                <Link to="/downloads">Downloads</Link>
+            <nav role="navigation" className="nav-container">
+                {
+                    _.compact(_.map( 
+                        _.values(this.props.data) , 
+                        (nav,index)=>{
+                            if(nav.display_txt){
+                                return  (<Link className={index===this.state.selected?"nav-item nav-item-selected":"nav-item"} to={nav.url} key={nav.url} onClick={(e)=>{ this.select(index) }}>
+                                            {nav.display_txt}
+                                        </Link>);
+                            }
+                            else{
+                                return null
+                            }
+                        } 
+                    ))
+                }
             </nav> 
         );
     }
 }
  
-export default Header;
+export default NavBar;

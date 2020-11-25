@@ -1,0 +1,99 @@
+{
+    "header":{
+        "name"      : "Abhisekh Nag",
+        "summary"   : "Senior Software Engineer | Artist | Perfectionist",
+        "avatar"    : "avatar.jpg",
+        "alt"       : "my cool dp"
+    },
+    "navbar":{
+        "root"      :{ "selected":2 , "body":"profile"     , "url":"/"                , "view": "Content"         },
+        "resume"    :{ "selected":2 , "body":"profile"     , "url":"/resume"          , "view": "Content"         },
+        "profile"   :{ "selected":2 , "body":"profile"     , "url":"/profile"         , "view": "Content"          , "display_txt":"Profile"    },
+        "skill"     :{ "selected":3 , "body":"profile"     , "url":"/skills"          , "view": "Content"          , "display_txt":"Skills"     },
+        "work"      :{ "selected":4 , "body":"profile"     , "url":"/work"            , "view": "Content"          , "display_txt":"Work"       },
+        "hobbies"   :{ "selected":5 , "body":"profile"     , "url":"/hobbies"         , "view": "Content"          , "display_txt":"Hobbies"    },
+        "downloads" :{ "selected":6 , "body":"downloads"   , "url":"/downloads"       , "view": "Downloads"        , "display_txt":"Downloads"  }
+    },
+    "sections":{
+        "profile":{
+            "body":{
+                "section_name":"Profile",
+                "category":{
+                    "cat1":{
+                        "display_name":"External profile links",
+                        "content":[
+                            {
+                                "id":"1",
+                                "type":"single_line",
+                                "icon":"github512.png",
+                                "header":"gitub.com"
+                            },
+                            {
+                                "id":"2",
+                                "type":"single_line",
+                                "icon":"github512.png",
+                                "header":"gitub.com",
+                                "right_content":"(dymmy date)",
+                                "data":[
+                                    {
+                                        "id":"1",
+                                        "text":"lorem upsum dolores"
+                                    },
+                                    {
+                                        "id":"2",
+                                        "style":"skills",
+                                        "text":"lorem upsum dolores"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "cat2":{
+                        "display_name":"External profile links",
+                        "content":[
+                            {
+                                "id":"3",
+                                "type":"single_line",
+                                "icon":"github512.png",
+                                "header":"gitub.com"
+                            },
+                            {
+                                "id":"4",
+                                "type":"single_line",
+                                "icon":"github512.png",
+                                "header":"gitub.com",
+                                "right_content":"(dymmy date)",
+                                "data":[
+                                    {
+                                        "id":"3",
+                                        "text":"lorem upsum dolores"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "skill":{
+            "body":{
+                "section_name":"skill"
+            }
+        },
+        "work":{
+            "body":{
+                "section_name":"work"
+            }
+        },
+        "hobbies":{
+            "body":{
+                "section_name":"hobbies"
+            }
+        },
+        "downloads":{
+            "body":{
+                "section_name":"downloads"
+            }
+        }
+    }
+}

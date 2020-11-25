@@ -1,25 +1,25 @@
-import { BrowserRouter as Router ,Switch } from 'react-router-dom';
+import { BrowserRouter as Router ,Switch , Route } from 'react-router-dom';
+import _ from 'lodash';
 import Header from './Header';
 import NavBar from './NavBar';
-import Profile from './Profile';
-import Skills from './Skills';
-import Work from './Work';
-import Hobbies from './Hobbies';
-import Downloads from './Downloads';
+import data from '../resources/data.json';
 
 function Main() {
   return (
     <div>
-      <Header/>
+      <Header data={data.header} />
       <Router>
-        <NavBar/>
+        <NavBar data={data.navbar} />
         <Switch>
-          <Router path="/"          exact> <Profile/>     </Router>
-          <Router path="/profile"   exact> <Profile/>     </Router>
-          <Router path="/skills"    exact> <Skills/>      </Router>
-          <Router path="/work"      exact> <Work/>        </Router>
-          <Router path="/hobbies"   exact> <Hobbies/>     </Router>
-          <Router path="/downloads" exact> <Downloads/>   </Router>
+          {
+            _.map( 
+              _.values(data.navbar) , 
+              (nav)=>{
+                let Component = require('./'+nav.view).default;
+                return <Route path={nav.url} exact key={nav.url}> <Component data={data.sections[nav.body]} /> </Route>
+              } 
+            )
+          }
         </Switch>
       </Router>
     </div>
