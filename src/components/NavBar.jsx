@@ -12,7 +12,7 @@ class NavBar extends Component {
         _.forEach(
             this.props.data,
             (nav)=>{
-                if(nav.url === window.location.pathname){
+                if(nav.url === _.trimEnd(window.location.pathname,"/")){
                     this.setState({
                         selected: nav.selected
                     })
