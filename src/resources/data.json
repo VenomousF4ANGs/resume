@@ -6,13 +6,12 @@
         "alt"       : "my cool dp"
     },
     "navbar":{
-        "root"      :{ "selected":2 , "body":"profile"     , "url":"/"                , "view": "Content"         },
-        "resume"    :{ "selected":2 , "body":"profile"     , "url":"/resume"          , "view": "Content"         },
-        "profile"   :{ "selected":2 , "body":"profile"     , "url":"/profile"         , "view": "Content"          , "display_txt":"Profile"    },
-        "skill"     :{ "selected":3 , "body":"profile"     , "url":"/skills"          , "view": "Content"          , "display_txt":"Skills"     },
-        "work"      :{ "selected":4 , "body":"profile"     , "url":"/work"            , "view": "Content"          , "display_txt":"Work"       },
-        "hobbies"   :{ "selected":5 , "body":"profile"     , "url":"/hobbies"         , "view": "Content"          , "display_txt":"Hobbies"    },
-        "downloads" :{ "selected":6 , "body":"downloads"   , "url":"/downloads"       , "view": "Downloads"        , "display_txt":"Downloads"  }
+        "resume"    :{ "selected":1 , "body":"profile"     , "url":"/resume"            , "view": "Content"         },
+        "profile"   :{ "selected":1 , "body":"profile"     , "url":"/resume/profile"    , "view": "Content"          , "display_txt":"Profile"    },
+        "skill"     :{ "selected":2 , "body":"profile"     , "url":"/resume/skills"    , "view": "Content"          , "display_txt":"Skills"     },
+        "work"      :{ "selected":3 , "body":"profile"     , "url":"/resume/work"      , "view": "Content"          , "display_txt":"Work"       },
+        "hobbies"   :{ "selected":4 , "body":"profile"     , "url":"/resume/hobbies"   , "view": "Content"          , "display_txt":"Hobbies"    },
+        "downloads" :{ "selected":5 , "body":"downloads"   , "url":"/resume/downloads" , "view": "Downloads"        , "display_txt":"Downloads"  }
     },
     "sections":{
         "profile":{
