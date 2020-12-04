@@ -1,0 +1,51 @@
+{
+    "header":{
+        "name"      : "text",
+        "summary"   : "text",
+        "avatar"    : "path",
+        "alt"       : "text"
+    },
+    "navbar":{
+        "profile"   :{ 
+            "selected"      : "number" , 
+            "body"          : "selected body section"     , 
+            "url"           : "url"    , 
+            "view"          : "jsx file name" , 
+            "display_name"  : "text|optional" ,
+            "id"            : "number" 
+        }
+    },
+    "sections":{
+        "selection body section":{
+            "display_name":"text|optional",
+            "content":[
+                {
+                    "icon"      : "path|optional",
+                    "header"    : "text|optional",
+                    "content"   : [
+                        {
+                            "id"    : "number",
+                            "icon"  : "path|optional",
+                            "header": "text|optional",
+                            "right" : "text|optional",
+                            "footer": "text|optional",
+                            "content":[
+                                {
+                                    "id"        : "number",
+                                    "type"      :"list|collapsible|text",
+                                    "content"   :{
+                                        "icon":"path",
+                                        "header":"text",
+                                        "body":"text",
+                                        "label":"text",
+                                        "list_icon":"path"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
