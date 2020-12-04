@@ -7,6 +7,11 @@
     color: var(--c_text);
 }
 
+.full-header {
+    position: sticky;
+    top: 0;
+}
+
 .header {
     background-color: var(--c_background);
     margin: 0;
@@ -17,12 +22,12 @@
 
 .avatar {
     vertical-align: middle;
-    width: 200px;
-    height: 200px;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
     border-style: solid;
     border-color: var(--c_primary_accent);
-    border-width: 0.5em;
+    border-width: 0.2em;
     margin: 4em 4em 4em 4em;
 }
 
@@ -39,6 +44,7 @@
 .nav-container {
     display: flex;
     flex-direction: row;
+    background-color: var(--c_background);
 }
 
 .nav-item {
@@ -82,7 +88,7 @@
     vertical-align: middle;
     width: 2em;
     height: 2em;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .card-header-text {

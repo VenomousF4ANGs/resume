@@ -9,7 +9,7 @@ class Content extends Component {
             <div className="content-container">
                 {
                     _.map(
-                        _.entries(this.props.data.body.category),
+                        _.sortBy(_.entries(this.props.data.body.category) , (e)=>{ return e[1].id }),
                         (entry)=>{
                             let category = entry[1]
                             return (

@@ -8,9 +8,10 @@
     "navbar":{
         "resume"    :{ "selected":1 , "body":"profile"     , "url":"/resume"            , "view": "Content"         },
         "profile"   :{ "selected":1 , "body":"profile"     , "url":"/resume/profile"    , "view": "Content"          , "display_txt":"Profile"    },
-        "skill"     :{ "selected":2 , "body":"profile"     , "url":"/resume/skills"    , "view": "Content"          , "display_txt":"Skills"     },
-        "work"      :{ "selected":3 , "body":"profile"     , "url":"/resume/work"      , "view": "Content"          , "display_txt":"Work"       },
-        "hobbies"   :{ "selected":4 , "body":"profile"     , "url":"/resume/hobbies"   , "view": "Content"          , "display_txt":"Hobbies"    },
+        "skill"     :{ "selected":2 , "body":"skill"       , "url":"/resume/skills"    , "view": "Content"          , "display_txt":"Skills"     },
+        "work"      :{ "selected":3 , "body":"work"        , "url":"/resume/work"      , "view": "Content"          , "display_txt":"Work"       },
+        "education" :{ "selected":3 , "body":"education"   , "url":"/resume/education" , "view": "Content"          , "display_txt":"Education"       },
+        "hobbies"   :{ "selected":4 , "body":"hobbies"     , "url":"/resume/hobbies"   , "view": "Content"          , "display_txt":"Hobbies"    },
         "downloads" :{ "selected":5 , "body":"downloads"   , "url":"/resume/downloads" , "view": "Downloads"        , "display_txt":"Downloads"  }
     },
     "sections":{
@@ -18,54 +19,61 @@
             "body":{
                 "section_name":"Profile",
                 "category":{
-                    "cat1":{
-                        "display_name":"External profile links",
+                    "sites":{
+                        "id":1,
+                        "display_name":"Sites",
                         "content":[
                             {
                                 "id":"1",
-                                "type":"single_line",
-                                "icon":"github512.png",
-                                "header":"gitub.com"
+                                "icon":"github.png",
+                                "header":"https://github.com/VenomousF4ANGs"
                             },
                             {
                                 "id":"2",
-                                "type":"single_line",
-                                "icon":"github512.png",
-                                "header":"gitub.com",
-                                "right_content":"(dymmy date)",
-                                "data":[
-                                    {
-                                        "id":"1",
-                                        "text":"lorem upsum dolores"
-                                    },
-                                    {
-                                        "id":"2",
-                                        "style":"skills",
-                                        "text":"lorem upsum dolores"
-                                    }
-                                ]
+                                "icon":"linkedin.png",
+                                "header":"https://www.linkedin.com/in/abhisekh-nag"
                             }
                         ]
                     },
-                    "cat2":{
-                        "display_name":"External profile links",
+                    "contact":{
+                        "id":2,
+                        "display_name":"Contact",
                         "content":[
                             {
-                                "id":"3",
-                                "type":"single_line",
-                                "icon":"github512.png",
-                                "header":"gitub.com"
+                                "id":"1",
+                                "icon":"location.png",
+                                "header":"HSR , Bangalore"
                             },
                             {
-                                "id":"4",
-                                "type":"single_line",
-                                "icon":"github512.png",
-                                "header":"gitub.com",
-                                "right_content":"(dymmy date)",
+                                "id":"2",
+                                "icon":"android.png",
+                                "header":"+91 9831991715"
+                            },
+                            {
+                                "id":"3",
+                                "icon":"mail.png",
+                                "header":"abhisekhnag2504@gmail.com"
+                            }
+                        ]
+                    },
+                    "summary":{
+                        "id":3,
+                        "display_name":"Summary",
+                        "content":[
+                            {
+                                "id":"1",
                                 "data":[
                                     {
-                                        "id":"3",
-                                        "text":"lorem upsum dolores"
+                                        "id":1,
+                                        "text":"Hands on experience in building complex scalable systems. Love to tackle complex tech challanges head-on. Building the next generation of Cyber-security Products"
+                                    },
+                                    {
+                                        "id":2,
+                                        "text":"Proficient in Python, NodeJS, Linux, SQL, Elasticsearch, GraphDB, Git, Java.Worked with with Apache Airflow, Docker, PostgreSQL, Redis, NSQ, Flask, Express, Kafka, NGINX.Wored in Linux (Ubuntu), Windows XP/Vista/7/8/10"
+                                    },
+                                    {
+                                        "id":3,
+                                        "text":"Interests - Researching about Physics and Mathematics and other scientific domains , Cryptography, Computer Graphics, inner workings of machine learning models , Playing Football and PC games"
                                     }
                                 ]
                             }
@@ -76,17 +84,390 @@
         },
         "skill":{
             "body":{
-                "section_name":"skill"
+                "section_name":"Skill",
+                "category":{
+                    "tech":{
+                        "id":1,
+                        "display_name":"Technical",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"python.png",
+                                "header":"Python"
+                            },
+                            {
+                                "id":2,
+                                "icon":"js.png",
+                                "header":"NodeJS / JavaScript"
+                            },
+                            {
+                                "id":3,
+                                "icon":"bullet.png",
+                                "header":"SQL"
+                            },
+                            {
+                                "id":4,
+                                "icon":"bullet.png",
+                                "header":"Java"
+                            },
+                            {
+                                "id":5,
+                                "icon":"bullet.png",
+                                "header":"ReactJS"
+                            },
+                            {
+                                "id":6,
+                                "icon":"bullet.png",
+                                "header":"Linux"
+                            }
+                        ]
+                    },
+                    "db":{
+                        "id":2,
+                        "display_name":"DataBase",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"ElasticSearch"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"PostgreSQL"
+                            },
+                            {
+                                "id":3,
+                                "icon":"bullet.png",
+                                "header":"Google BigQuery"
+                            },
+                            {
+                                "id":4,
+                                "icon":"bullet.png",
+                                "header":"JanusGraph"
+                            },
+                            {
+                                "id":5,
+                                "icon":"bullet.png",
+                                "header":"Redis"
+                            }
+                        ]
+                    },
+                    "devops":{
+                        "display_name":"Systems",
+                        "content":[
+                            {
+                                "id":0,
+                                "icon":"bullet.png",
+                                "header":"Git , GitHub , BitBucket"
+                            },
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Docker , Docker Compose , Docker Swarm"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Apache Airflow"
+                            },
+                            {
+                                "id":3,
+                                "icon":"bullet.png",
+                                "header":"NSQ"
+                            },
+                            {
+                                "id":4,
+                                "icon":"bullet.png",
+                                "header":"Kafka"
+                            },
+                            {
+                                "id":5,
+                                "icon":"bullet.png",
+                                "header":"NGINX"
+                            }
+                        ]
+                    },
+                    "arch":{
+                        "display_name":"Design",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"High and Low Level System Design"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Technical Design"
+                            }
+                        ]
+                    },
+                    "hr":{
+                        "display_name":"Interpersonal",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Leadership"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Ownership"
+                            }
+                        ]
+                    },
+                    "languages":{
+                        "display_name":"Languages Known",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"English"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Hindi"
+                            },
+                            {
+                                "id":3,
+                                "icon":"bullet.png",
+                                "header":"Bengali"
+                            }
+                        ]
+                    }
+                }
             }
         },
         "work":{
             "body":{
-                "section_name":"work"
+                "section_name":"Work",
+                "category":{
+                    "work":{
+                        "display_name":"Professional Work",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Attack Surface Intelligence",
+                                "right_content":"November , 2019 - Present",
+                                "data":[{
+                                    "id":1,
+                                    "text":"Netenrich Inc acccuired ThreatLandscape Inc"
+                                },
+                                {
+                                    "id":2,
+                                    "text":"A system to detect threats and security issues in a targeted network using cyber threat intel gathered from numerous sources across the internet. This system can detect threats drilled down to each system on the network. It also creates security incidents detailing the threats as well as the remediation for the network owners to respond to"
+                                },
+                                {
+                                    "id":3,
+                                    "text":"Python, Elasticsearch, Git, Airflow, PostgreSQL"
+                                }]
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Vulnerability Intelligence",
+                                "right_content":"January , 2019 - Present",
+                                "data":[{
+                                    "id":1,
+                                    "text":"ThreatLandscape Inc"
+                                },
+                                {
+                                    "id":2,
+                                    "text":"A system to detect threats and security issues in a targeted network using cyber threat intel gathered from numerous sources across the internet. This system can detect threats drilled down to each system on the network. It also creates security incidents detailing the threats as well as the remediation for the network owners to respond to"
+                                },
+                                {
+                                    "id":3,
+                                    "text":"Python, Elasticsearch, Git, Airflow, Google BigQuerry, PostgreSQL"
+                                }]
+                            },
+                            {
+                                "id":3,
+                                "icon":"bullet.png",
+                                "header":"Threat Intelligence",
+                                "right_content":"August , 2018 - November , 2019",
+                                "data":[{
+                                    "id":1,
+                                    "text":"ThreatLandscape Inc"
+                                },
+                                {
+                                    "id":2,
+                                    "text":"Design and Development of a complex yet elegant backend system which gathers cyber threat data from numerous sources from across the internet and maintains a distributed database of all that data and also serves that data in a presentable way to the frontend UI"
+                                },
+                                {
+                                    "id":3,
+                                    "text":"Python, JaunusGraph, ElasticSearch, NSQ, Redis, Java, Docker, Cassandra, NodeJS"
+                                }
+                            ]
+                            },
+                            {
+                                "id":4,
+                                "icon":"bullet.png",
+                                "header":"Digital Invoice Processing",
+                                "right_content":"January , 2017 - August , 2018",
+                                "data":[{
+                                    "id":1,
+                                    "text":"Infosys Ltd"
+                                },
+                                {
+                                    "id":2,
+                                    "text":"This project involved maintenance and enhancement of an Invoice Processing System. This system took hard copy invoices, scanned them and used OCR to convert them to text and matched them against regular expressions to pick out relevant data and validate them according to client requirements and export them to SAP. I contributed in the enhancement and training of the OCR system and adding UI features and validations according to user requirements. Also worked on developing a workflow to automate the entire process for a percent of invoices where all data are valid."
+                                },
+                                {
+                                    "id":3,
+                                    "text":"XML , PLSQL , Kofax , Basware"
+                                }]
+                            }
+                        ]
+                    },
+                    "training":{
+                        "display_name":"Professional Training",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Foundation Training",
+                                "right_content":"July , 2016 - December , 2016",
+                                "data":[{
+                                    "id":1,
+                                    "text":"Infosys Ltd"
+                                }]
+                            }
+                        ]
+                    },
+                    "personal":{
+                        "display_name":"Personal Projects",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Android Game",
+                                "right_content":"July , 2015 - December , 2016"
+                            },
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Flash Game",
+                                "right_content":"July , 2015 - December , 2016"
+                            }
+                        ]
+                    }
+                }
             }
         },
         "hobbies":{
             "body":{
-                "section_name":"hobbies"
+                "section_name":"hobbies",
+                "category":{
+                    "tech":{
+                        "display_name":"Technical Interests",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Inner Workings of Machine learning Models"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Cryptography"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Computer Graphics"
+                            }
+                        ]
+                    },
+                    "cocur":{
+                        "display_name":"Co Curricular Interests",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Mathematics"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Physics"
+                            }
+                        ]
+                    },
+                    "extra":{
+                        "display_name":"Extra Curricular Interests",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Football"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"Computer Gaming"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "education":{
+            "body":{
+                "section_name":"education",
+                "category":{
+                    "college":{
+                        "id":1,
+                        "display_name":"Bachelors in Technology ",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"Computer Science and Engineering"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"DGPA: 8.5"
+                            }
+                        ]
+                    },
+                    "HS":{
+                        "id":2,
+                        "display_name":"Higher Secondary Schooling",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"General Studies"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"75%"
+                            }
+                        ]
+                    },
+                    "10":{
+                        "id":3,
+                        "display_name":"Secondary Schooling",
+                        "content":[
+                            {
+                                "id":1,
+                                "icon":"bullet.png",
+                                "header":"General Studies"
+                            },
+                            {
+                                "id":2,
+                                "icon":"bullet.png",
+                                "header":"72%"
+                            }
+                        ]
+                    }
+                }
             }
         },
         "downloads":{

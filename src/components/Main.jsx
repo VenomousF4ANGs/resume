@@ -1,5 +1,6 @@
 import { BrowserRouter as Router ,Switch , Route } from 'react-router-dom';
 import _ from 'lodash';
+import '../styles/common.css';
 import Header from './Header';
 import NavBar from './NavBar';
 import data from '../resources/data.json';
@@ -7,9 +8,11 @@ import data from '../resources/data.json';
 function Main() {
   return (
     <div>
-      <Header data={data.header} />
       <Router>
-        <NavBar data={data.navbar} />
+        <div className="full-header">
+          <Header data={data.header} />
+          <NavBar data={data.navbar} />
+        </div>
         <Switch>
           {
             _.map( 

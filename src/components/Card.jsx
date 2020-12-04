@@ -8,13 +8,13 @@ class Card extends Component {
         return ( 
             <div className="card">
                 <div className="card-header">
-                    <img 
+                    {content.icon?<img 
                         className="card-header-icon" 
                         src={ require("../resources/icon/" + content.icon ).default } 
                         alt="icon" 
-                    />
-                    <div className="card-header-text" >{content.header}</div>
-                    <div className="card-header-right" >{content.right_content}</div>
+                    />:""}
+                    {content.header?<div className="card-header-text" >{content.header}</div>:""}
+                    {content.right_content?<div className="card-header-right" >{content.right_content}</div>:""}
                 </div>
                 {
                     _.map(
